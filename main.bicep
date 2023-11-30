@@ -13,7 +13,6 @@ param dockerRegistryServerPassword string
 param dockerRegistryServerUrl string
 param dockerRegistryServerUsername string
 
-
 // Azure Container Registry module
 module acr './modules/container-registry/registry/main.bicep' = {
   name: containerRegistryName
@@ -61,4 +60,3 @@ module webApp './modules/web/site/main.bicep' = {
     }
   }
 }
-
