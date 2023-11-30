@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "containerRegistryName": {
-      "value": "mdrummond-acr"
+      "value": "mdrummondACR"
     },
     "appServicePlanName": {
-      "value": "mdrummond-asp"
+      "value": "mdrummondASP"
     },
     "location": {
       "value": "Central India"
