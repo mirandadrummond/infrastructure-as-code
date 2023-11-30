@@ -8,15 +8,6 @@
     "appServicePlanName": {
       "value": "mdrummond_asp"
     },
-    "webAppName": {
-      "value": "mdrummond_webapp"
-    },
-    "containerRegistryImageName": {
-      "value": "mdrummond_container_image"
-    },
-    "containerRegistryImageVersion": {
-      "value": "mdrummond_container_image_version"
-    },
     "location": {
       "value": "Central India"
     }

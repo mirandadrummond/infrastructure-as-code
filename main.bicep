@@ -7,9 +7,6 @@ param appServicePlanName string
 // param containerRegistryImageName string
 // param containerRegistryImageVersion string
 param location string
-// param dockerRegistryServerUrl string
-// param dockerRegistryServerUsername string
-// param dockerRegistryServerPassword string
 
 // Azure Container Registry module
 module acr './modules/container-registry/registry/main.bicep' = {
