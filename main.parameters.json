@@ -8,6 +8,15 @@
     "appServicePlanName": {
       "value": "mdrummondASP"
     },
+    "webAppName": {
+      "value": "mdrummondWebApp"
+    },
+    "containerRegistryImageName": {
+      "value": "mdrummondacr.azurecr.io/mdrummondwebapp"
+    },
+    "containerRegistryImageVersion": {
+      "value": "latest"
+    },
     "location": {
       "value": "Central India"
     }
