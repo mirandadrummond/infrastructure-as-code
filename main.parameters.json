@@ -3,37 +3,22 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "containerRegistryName": {
-      "value": "<your_container_registry_name>"
+      "value": "mdrummond_acr"
     },
     "appServicePlanName": {
-      "value": "<your_app_service_plan_name>"
+      "value": "mdrummond_asp"
     },
     "webAppName": {
-      "value": "<your_web_app_name>"
+      "value": "mdrummond_webapp"
     },
     "containerRegistryImageName": {
-      "value": "<your_container_registry_image_name>"
+      "value": "mdrummond_container_image"
     },
     "containerRegistryImageVersion": {
-      "value": "<your_container_registry_image_version>"
+      "value": "mdrummond_container_image_version"
     },
-    "acrLocation": {
-      "value": "<your_acr_location>"
-    },
-    "servicePlanLocation": {
-      "value": "<your_service_plan_location>"
-    },
-    "webAppLocation": {
-      "value": "<your_web_app_location>"
-    },
-    "dockerRegistryServerUrl": {
-      "value": "<your_docker_registry_server_url>"
-    },
-    "dockerRegistryServerUsername": {
-      "value": "<your_docker_registry_server_username>"
-    },
-    "dockerRegistryServerPassword": {
-      "value": "<your_docker_registry_server_password>"
+    "location": {
+      "value": "Central India"
     }
   }
 }
