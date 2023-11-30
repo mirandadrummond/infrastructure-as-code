@@ -22,5 +22,5 @@ jobs:
       run: |
         az deployment group create \
           --resource-group aguadamillas_students_1 \
-          --template-file ./path/to/main.bicep \
+          --template-file ./main.bicep \
           --parameters @main.parameters.json
