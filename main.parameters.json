@@ -19,6 +19,9 @@
     },
     "location": {
       "value": "Central India"
+    },
+    "keyVaultName": {
+      "value": "mdrummondKV"
     }
   }
 }
