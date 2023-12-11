@@ -17,6 +17,9 @@
     "containerRegistryImageVersion": {
       "value": "latest"
     },
+    "keyVaultName": {
+      "value": "mdrummondKV"
+    },
     "location": {
       "value": "Central India"
     }
