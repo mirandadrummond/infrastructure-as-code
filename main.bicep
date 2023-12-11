@@ -9,8 +9,8 @@ param containerRegistryImageVersion string
 param location string
 param keyVaultName string
 
-param keyVaultSecretNameACRUsername string = 'username'
-param keyVaultSecretNameACRPassword1 string = 'password1'
+param keyVaultSecretNameACRUsername string = 'acr-username'
+param keyVaultSecretNameACRPassword1 string = 'acr-password1'
 
 //key vault reference
 resource keyvault 'Microsoft.KeyVault/vaults@2023-02-01' existing = {
@@ -24,7 +24,7 @@ resource acr 'Microsoft.ContainerRegistry/registries@2023-07-01' existing = {
  }
 
 // Azure Service Plan for Linux module
-module servicePlan './modules/web/serverfarm/main.bicep' = {
+module servicePlan './ResourceModules-main 2/modules/web/serverfarm/main.bicep' = {
   name: appServicePlanName
   params: {
     name: appServicePlanName
@@ -41,7 +41,7 @@ module servicePlan './modules/web/serverfarm/main.bicep' = {
 }
 
 // Azure Web App for Linux containers module
-module webApp './modules/web/site/main.bicep' = {
+module webApp './ResourceModules-main 2/modules/web/site/main.bicep' = {
   name: webAppName
   dependsOn: [
     servicePlan

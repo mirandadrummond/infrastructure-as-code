@@ -1,10 +1,10 @@
 param location string
 param keyVaultName string
 param containerRegistryName string
-param keyVaultSecretNameACRUsername string ='username'
-param keyVaultSecretNameACRPassword1 string ='password1'
+param keyVaultSecretNameACRUsername string ='acr-username'
+param keyVaultSecretNameACRPassword1 string ='acr-password1'
 
-module keyvault './modules/key-vault/vault/main.bicep' = {
+module keyvault './ResourceModules-main 2/modules/key-vault/vault/main.bicep' = {
   name: keyVaultName
   params: {
     name: keyVaultName
@@ -20,7 +20,7 @@ module keyvault './modules/key-vault/vault/main.bicep' = {
   }
 }
 
-module acr './modules/container-registry/registry/main.bicep' = {
+module acr './ResourceModules-main 2/modules/container-registry/registry/main.bicep' = {
   name: containerRegistryName
   dependsOn: [
     keyvault
