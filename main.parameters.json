@@ -18,7 +18,7 @@
       "value": "latest"
     },
     "keyVaultName": {
-      "value": "mdrummondKV"
+      "value": "mdrummond-keyvault"
     },
     "location": {
       "value": "Central India"
