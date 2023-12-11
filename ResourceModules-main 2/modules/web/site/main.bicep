@@ -152,6 +152,20 @@ param hybridConnectionRelays array = []
 ])
 param publicNetworkAccess string = ''
 
+@secure()
+param dockerRegistryServerUrl string
+@secure()
+param dockerRegistryServerUserName string
+@secure()
+param dockerRegistryServerPassword string
+
+var dockerAppSettings = {
+  DOCKER_REGISTRY_SERVER_URL: dockerRegistryServerUrl
+  DOCKER_REGISTRY_SERVER_USERNAME: dockerRegistryServerUserName
+  DOCKER_REGISTRY_SERVER_PASSWORD: dockerRegistryServerPassword
+}
+
+
 var formattedUserAssignedIdentities = reduce(map((managedIdentities.?userAssignedResourceIds ?? []), (id) => { '${id}': {} }), {}, (cur, next) => union(cur, next)) // Converts the flat array to an object like { '${id1}': {}, '${id2}': {} }
 
 var identity = !empty(managedIdentities) ? {
